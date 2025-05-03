@@ -10,7 +10,5 @@ import java.util.List;
 public interface MenuItemRepository extends JpaRepository<MenuItemEntity, String> {
     List<MenuItemEntity> findByCategoryIgnoreCase(String category);
     List<MenuItemEntity> findByItemNameContainingIgnoreCase(String name);
-
-
     List<MenuItemEntity> findByItemCodeContainingIgnoreCase(String name);
 }

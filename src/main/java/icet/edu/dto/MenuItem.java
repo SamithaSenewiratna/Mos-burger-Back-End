@@ -9,10 +9,9 @@ import jakarta.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "menu_items")
+
 public class MenuItem {
-    @Id
+
     private String itemCode;
     private String itemName;
     private double price;
